@@ -1,0 +1,392 @@
+/* General navbar styling */
+.nav-bar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #1d1559;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   position: relative;
+}
+
+/* Logo styling */
+.nav-bar .logo {
+   background-image: url('depositphotos_75955825-stock-illustration-airplane-with-color-smoke-airlines.jpg'); /* Replace with the actual logo file path */
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 150px;
+   height: 50px;
+}
+
+/* Right-side navigation (login, signup, help) */
+.nav1 {
+   display: flex;
+   align-items: center;
+}
+
+/* Login & Signup button styling */
+.log-reg-btn, .hlp-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   color: #1d1559;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-left: 20px;
+   transition: background-color 0.3s ease;
+   font-family: 'Arial', sans-serif;
+}
+
+.log-reg-btn:hover, .hlp-btn:hover {
+   background-color: whitesmoke;
+}
+
+/* Icon styling for buttons */
+.log-reg-btn i, .hlp-btn i {
+   margin-right: 8px;
+}
+/* General styling for the nav2 section */
+.nav2 {
+   display: flex; /* Flexbox for layout */
+   align-items: center; /* Center items vertically */
+   padding: 10px 20px; /* Padding for top and bottom */
+}
+
+/* Button styling for Book and Discover Us */
+.nav2 .book, .nav2 .discover-us {
+   display: flex; /* Flex for centering content */
+   align-items: center; /* Center icon and text vertically */
+   justify-content: center; /* Center text */
+   background-color: white; /* Blue background color */
+   color: #1d1559; /* White text color */
+   border: none; /* Remove default border */
+   padding: 10px 20px; /* Padding for buttons */
+   font-size: 16px; /* Font size */
+   border-radius: 5px; /* Rounded corners */
+   cursor: pointer; /* Pointer cursor on hover */
+   margin-left: 20px; /* Space between buttons */
+   transition: background-color 0.3s ease; /* Transition for hover effect */
+   font-family: 'Arial', sans-serif; 
+}
+
+/* Hover effect for buttons */
+.nav2 .book:hover, .nav2 .discover-us:hover {
+   background-color: whitesmoke; /* Darker blue on hover */
+}
+
+/* Optional icon styling (if you choose to add icons in the future) */
+.nav2 .book i, .nav2 .discover-us i {
+   margin-right: 8px; /* Space between icon and text */
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+   .nav-bar {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .nav1 {
+       flex-direction: row;
+       justify-content: space-around;
+       width: 100%;
+   }
+
+   .log-reg-btn, .hlp-btn {
+       width: 100%;
+       margin-top: 10px;
+   }
+
+   .logo {
+       width: 120px;
+       height: 40px;
+   }
+}
+
+/*hero section*/
+.hero-section {
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+   background-image: url(pexels-asadphoto-457882.jpg);
+}
+
+.ticket-box {
+   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+   border-radius: 8px;
+   padding: 20px;
+   width: 700px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+h2 {
+   font-size: 24px;
+   display: flex;
+   align-items: center;
+}
+
+.ticket-info {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin: 10px 0;
+}
+
+.airport-dropdown {
+   font-size: 16px;
+   padding: 5px;
+   width: 100%;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.srch-btn {
+   background-color: #1d1559;
+   color: white;
+   font-size: 18px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   width: 100%;
+   cursor: pointer;
+}
+
+.srch-btn:hover {
+   background-color: #0056b3;
+}
+
+
+/* General container styling */
+.discover {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 20px; /* Space between cards */
+   padding: 20px;
+   background-color: #f9f9f9;
+}
+
+/* Individual offer cards */
+.offer-card {
+   background-color: #ffffff;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   width: 250px;
+   padding: 20px;
+   text-align: center;
+   transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+   transform: translateY(-5px); /* Adds a lift effect on hover */
+}
+
+/* Card image styling */
+.offer-card-img {
+   width: 100%;
+   height: 150px;
+   object-fit: cover; /* Ensures the image fits the card neatly */
+   border-radius: 10px;
+   margin-bottom: 15px;
+}
+
+/* Card title styling */
+.offer-card-title {
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 10px;
+}
+
+/* Card content styling */
+.offer-card-content {
+   font-size: 14px;
+   color: #666;
+   line-height: 1.5;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+   .discover {
+       justify-content: center; /* Centers the cards on small screens */
+   }
+
+   .offer-card {
+       width: 100%; /* Makes the card take full width on smaller screens */
+       max-width: 300px; /* Limits max width */
+   }
+}
+/* General container styling */
+.offer {
+    background-color: #1d1559;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+.offer select {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover and focus effect for dropdown */
+.offer select:focus,
+.offer select:hover {
+    border-color: #1d1559;
+    outline: none;
+}
+
+/* Make the 'from' text slightly distinct */
+.offer select + span {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .offer {
+        font-size: 16px;
+    }
+
+    .offer select {
+        font-size: 16px;
+        margin: 5px 0;
+        width: 100%;
+    }
+}
+
+.slider-container {
+   position: relative;
+   max-width: 1000px;
+   width: 100%;
+   margin: auto;
+   overflow: hidden;
+}
+
+.slider {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+   min-width: 300px; /* Adjust card width */
+   height: 400px;    /* Adjust card height */
+   margin: 10px;     /* Adds some spacing between slides */
+   box-sizing: border-box;
+   text-align: center;
+   position: relative;
+}
+
+.slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px;
+}
+
+.slide p {
+   position: absolute;
+   bottom: 15px;
+   left: 50%;
+   transform: translateX(-50%);
+   background: rgba(0, 0, 0, 0.6);
+   color: white;
+   padding: 10px;
+   border-radius: 5px;
+   font-size: 18px;
+}
+
+.prev, .next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   font-size: 24px;
+   border-radius: 50%;
+}
+
+.prev {
+   left: 10px;
+}
+
+.next {
+   right: 10px;
+}
+
+.prev:hover, .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+}
+.follow{
+   display:flex;
+   justify-content: space-evenly;   
+}
+.payment i{
+   font-size: 25px;
+   padding: 0 5px;  
+   display:flex;
+   justify-content: space-evenly; 
+}
+.pay_opt{
+   display: flex;
+   justify-content: flex-start;
+}
+.social-media i{
+   font-size: 25px;
+   padding: 0 5px;
+}
+.foot-panel {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: #1d1559;
+   color: white;
+}
+
+.foot-panel ul {
+   list-style: none;
+   margin: 20px;
+   padding: 0;
+   width: 200px; /* Set a width to keep it structured */
+}
+
+.foot-panel ul p {
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.foot-panel ul a {
+   display: block;
+   margin-bottom: 8px;
+   text-decoration: none;
+   color: whitesmoke;
+   font-size: 16px;
+   transition: color 0.3s ease;
+}
+
+.foot-panel ul a:hover {
+   color: #0056b3;
+}
+
+
+
+
